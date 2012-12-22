@@ -1,0 +1,22 @@
+{ "name": "mongoose-compound-example-app"
+, "version": "0.0.1"
+, "engines": ["node >= 0.8.0"]
+, "main": "server.js"
+, "dependencies":
+  { "ejs":              "*"
+  , "ejs-ext":          "latest"
+  , "express":          "~3.x"
+  , "compound":       ">= 1.1.0"
+  , "mongoose": "latest"
+  , "coffee-script":    ">= 1.1.1"
+  , "stylus":           "latest"
+  },
+  "devDependencies":
+  { "nodeunit":         "*"
+  , "sinon":            "*"
+  , "semicov":          "*"
+  }
+, "scripts":
+  { "test": "nodeunit test/*/*"
+  }
+}
