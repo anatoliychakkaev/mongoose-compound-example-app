@@ -8,16 +8,17 @@
 
 1. programmatically
 
-    require('mongoose-compound-example-app')().listen(3000, '0.0.0.0');
+    `require('mongoose-compound-example-app')().listen(3000, '0.0.0.0');`
 
 2. command line (inside this project dir)
 
-    node .
+    `node .`
 
 ### It works?
 
 ```sh
-curl -I http://localhost:3000/cat/heyKitty
+$ curl -I http://localhost:3000/cat/heyKitty
+
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
@@ -28,11 +29,12 @@ Path=/; HttpOnly
 Date: Sat, 22 Dec 2012 11:35:30 GMT
 Connection: keep-alive
 
-curl http://localhost:3000/cat/heyKitty
+$ curl http://localhost:3000/cat/heyKitty
+
 {
   "_id": "50d59af79e1077cf7b000001"
 }
 ```
 
-If you have any questions, ask in related issue:
+If you have any questions, ask in corresponding issue:
 https://github.com/1602/compound/issues/288
