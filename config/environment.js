@@ -3,9 +3,7 @@ module.exports = function (compound) {
     var express = require('express');
     var app = compound.app;
 
-    compound.on('post-init', function () {
-        require('./mongoose').init(compound);
-    });
+    require('./mongoose').init(compound);
 
     app.configure(function(){
         app.use(compound.assetsCompiler.init());
